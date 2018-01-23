@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,700");
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #844a57, #f4dac1);
+  width: 100%;
+  text-align: center;
+  color: #663a43;
+  font-family: "Quicksand"; }
+  body h1 {
+    font-size: 45px;
+    text-transform: uppercase; }
+  body img {
+    width: 200px;
+    height: 100px; }
+  body button {
+    background-color: #663a43;
+    color: white;
+    border: 0.5px solid white;
+    border-radius: 20px;
+    height: 25px;
+    width: 150px; }
+  body input {
+    border: 1px solid #663a43; }
+
+#countries {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  #countries div[class^='country-'] {
+    width: 300px;
+    border: 2px solid white;
+    margin: 20px auto;
+    font-size: 17px; }
+    #countries div[class^='country-'] h3 {
+      font-size: 24px;
+      text-transform: uppercase; }
+
+/*# sourceMappingURL=style.css.map */

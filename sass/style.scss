@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+$basic-font: 'Quicksand';
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #844a57, #f4dac1);
+    width: 100%;
+    text-align: center;
+    color: #663a43;
+    font-family: $basic-font;
+    
+    h1 {
+        font-size: 45px;
+        text-transform: uppercase;
+    }
+ 
+    img {
+        width: 200px;
+        height: 100px;
+    }
+    
+    button {
+        background-color: #663a43;
+        color: white;
+        border: 0.5px solid white;
+        border-radius: 20px;
+        height: 25px;
+        width: 150px;
+    }
+    
+    input {
+         border: 1px solid #663a43;
+    }
+}
+
+#countries {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    div[class^='country-']{
+        width: 300px;
+        border: 2px solid white;
+        margin: 20px auto;
+        font-size: 17px;
+        
+        h3 {
+            font-size: 24px;
+            text-transform: uppercase;
+        }
+    }
+}
