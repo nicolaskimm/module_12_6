@@ -16,13 +16,12 @@ $(function() {
     
     function showCountriesList(resp) {
         countriesList.empty();
-
-        var x = 1;
+        
         resp.forEach(function(item){
             
             countriesList.append("<div></div>");
-            $("div:last").addClass("country-" + x);
-            var newDiv = $(".country-" + x);
+            $("div:last").addClass("country-" + resp.indexOf(item));
+            var newDiv = $(".country-" + resp.indexOf(item));
    
             $('<h3>').text(item.name).appendTo(newDiv);
             $('<img>').attr('src', item.flag).appendTo(newDiv);
@@ -30,9 +29,7 @@ $(function() {
             $('<p>').text('Area: ' + item.area).appendTo(newDiv);
             $('<p>').text('Region: ' + item.region).appendTo(newDiv);
             $('<p>').text('Currency: ' + item.currencies[0].name).appendTo(newDiv);
-            
-            x = x+1;
-     
+                 
         });
     }
 });
