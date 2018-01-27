@@ -17,11 +17,11 @@ $(function() {
     function showCountriesList(resp) {
         countriesList.empty();
         
-        resp.forEach(function(item){
+        resp.forEach(function(item, index){
             
             countriesList.append("<div></div>");
-            $("div:last").addClass("country-" + resp.indexOf(item));
-            var newDiv = $(".country-" + resp.indexOf(item));
+            $("div:last").addClass("country-" + index);
+            var newDiv = $(".country-" + index);
    
             $('<h3>').text(item.name).appendTo(newDiv);
             $('<img>').attr('src', item.flag).appendTo(newDiv);
